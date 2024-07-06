@@ -11,17 +11,17 @@ This project demonstrates the implementation of the PageRank algorithm using Net
 The PageRank algorithm computes a ranking of the nodes in a directed graph based on the structure of the incoming links. The algorithm assigns a numerical weighting to each element, with the purpose of measuring its relative importance within the graph. The core idea is that a node is more important if it is linked to by other important nodes.
 
 ## Parameters
-⋅⋅* graph: The input graph represented as a dictionary where keys are nodes and values are lists of neighboring nodes.
-⋅⋅* alpha: The damping factor, usually set to 0.85.
-⋅⋅* max_iterations: The maximum number of iterations to perform.
-⋅⋅* tol: The tolerance level to check convergence.
+- graph: The input graph represented as a dictionary where keys are nodes and values are lists of neighboring nodes.
+- alpha: The damping factor, usually set to 0.85.
+- ax_iterations: The maximum number of iterations to perform.
+- tol: The tolerance level to check convergence.
 
 ## Algorithm Steps
 1. Initialize each node's score to 1 / number_of_nodes.
 2. Iterate for a maximum of max_iterations or until convergence:
-   ⋅⋅* For each node, update its score based on the scores of its predecessors and their out-degrees.
-   ⋅⋅* Apply the damping factor and adjust the score with the teleportation probability.
-   ⋅⋅* Check for convergence by comparing the change in scores with tol.
+   - For each node, update its score based on the scores of its predecessors and their out-degrees.
+   - Apply the damping factor and adjust the score with the teleportation probability.
+   - Check for convergence by comparing the change in scores with tol.
 
 
 
